@@ -55,16 +55,10 @@ public class keywordengine {
 		for(int i=0;i<sheet.getLastRowNum();i++) {
 
 			try {
-				String locatorcolvalue = sheet.getRow(i+1).getCell(k+1).toString().trim();
-
-				if(!locatorcolvalue.equalsIgnoreCase("NA")) {
-
-					locatorName = locatorcolvalue.split("=")[0].trim();
-					locatorValue = locatorcolvalue.split("=")[1].trim();			
-				}
-
-				String action = sheet.getRow(i+1).getCell(k+2).toString().trim();
-				String value = sheet.getRow(i + 1).getCell(k + 3).toString().trim();
+				String locatortype = sheet.getRow(i+1).getCell(k+1).toString().trim();
+				String locatorvalue = sheet.getRow(i+1).getCell(k+2).toString().trim();	
+				String action = sheet.getRow(i+1).getCell(k+3).toString().trim();
+				String value = sheet.getRow(i + 1).getCell(k + 4).toString().trim();
 
 				switch (action) {
 				case "open browser":
@@ -95,16 +89,16 @@ public class keywordengine {
 					System.out.println("No Action is defined");
 					break;
 				}
-				switch (locatorName) {
+				switch (locatortype) {
 				case "id":
-					WebElement element = driver.findElement(By.id(locatorValue));
+					WebElement element = driver.findElement(By.id(locatorvalue));
 					if(action.equalsIgnoreCase("sendkeys")) {
 
 						element.sendKeys(value);
 					}else if(action.equalsIgnoreCase("click")) {
 						element.click();
 					}	
-					locatorName = null;
+					locatortype = null;
 					break;
 
 				case "linkText":
