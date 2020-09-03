@@ -22,4 +22,10 @@ public class LoginTest {
 		keyWordEngine = new keywordengine();
 		keyWordEngine.startexecution("login");		
 	}
+	@Test
+	public void signupTest_Scenario() {
+		
+		keyWordEngine = new keywordengine();
+		keyWordEngine.startexecution("login1");		
+	}
 }

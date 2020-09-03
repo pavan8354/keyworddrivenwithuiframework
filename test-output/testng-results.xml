@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-02T05:02:29Z" name="Default suite" finished-at="2020-09-02T05:03:00Z" duration-ms="30620">
+  <suite started-at="2020-09-03T10:23:37Z" name="Default suite" finished-at="2020-09-03T10:25:09Z" duration-ms="91928">
     <groups>
     </groups>
-    <test started-at="2020-09-02T05:02:29Z" name="Default test" finished-at="2020-09-02T05:03:00Z" duration-ms="30620">
+    <test started-at="2020-09-03T10:23:37Z" name="Default test" finished-at="2020-09-03T10:25:09Z" duration-ms="91928">
       <class name="Com.Qa.Test.LoginTest">
-        <test-method signature="loginTest_Scenario()[pri:0, instance:Com.Qa.Test.LoginTest@37911f88]" started-at="2020-09-02T05:02:29Z" name="loginTest_Scenario" finished-at="2020-09-02T05:03:00Z" duration-ms="30542" status="PASS">
+        <test-method signature="loginTest_Scenario()[pri:0, instance:Com.Qa.Test.LoginTest@6f1c29b7]" started-at="2020-09-03T10:23:38Z" name="loginTest_Scenario" finished-at="2020-09-03T10:25:09Z" duration-ms="91519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_Scenario -->
+        <test-method signature="signupTest_Scenario()[pri:0, instance:Com.Qa.Test.LoginTest@6f1c29b7]" started-at="2020-09-03T10:25:09Z" name="signupTest_Scenario" finished-at="2020-09-03T10:25:09Z" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupTest_Scenario -->
       </class> <!-- Com.Qa.Test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
